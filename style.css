@@ -1,30 +1,31 @@
-/* Page styles for Election 2025 Results */
-
-/* Layout & Colors */
+/* General Page Style */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: #f4f4f4;
   color: #333;
 }
 
+/* Header */
 header {
-  background-color: #003366;
+  background: #003366;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Navigation */
 nav {
-  background-color: #0066ff;
+  background: #0055aa;
 }
 
 nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 0;
 }
 
 nav ul li {
@@ -41,7 +42,7 @@ nav a:hover {
   color: #ffcc00;
 }
 
-/* Main Sections */
+/* Sections */
 main {
   padding: 20px;
 }
@@ -51,31 +52,32 @@ section {
 }
 
 h2 {
-  border-bottom: 3px solid #003366;
-  padding-bottom: 5px;
   color: #003366;
+  border-left: 6px solid #003366;
+  padding-left: 10px;
 }
 
-/* Candidate Cards */
+/* Candidate Cards (modern layout) */
 .candidate {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background: white;
+  display: flex;
+  gap: 20px;
   padding: 20px;
+  border-radius: 10px;
   margin: 20px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .candidate img {
-  width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 10px auto;
+  width: 130px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .candidate h3 a {
-  text-decoration: none;
   color: #003366;
+  text-decoration: none;
 }
 
 .candidate h3 a:hover {
@@ -84,23 +86,28 @@ h2 {
 
 /* Party Colors */
 .democrat {
-  color: #0066ff;
+  color: #0066ff; /* Democrat */
 }
 
 .republican {
-  color: #ff0000;
+  color: #ff0000; /* Republican */
 }
 
-.other {
-  color: #ffcc00;
+.other-party {
+  color: #ffcc00; /* Other */
+}
+
+.nowebsite {
+  font-style: italic;
+  color: #777;
 }
 
 /* Footer */
 footer {
-  background-color: #003366;
+  background: #003366;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
 }
 
 footer a {
